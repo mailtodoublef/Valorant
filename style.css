@@ -1,0 +1,44 @@
+ p {
+    font-size:20px;
+    color:cadetblue;
+}
+
+p, ul, ol {
+ color:slategrey;
+}
+
+.standout {
+ color:brown;
+}
+
+h2.standout {
+ color:aquamarine;
+}
+
+.image1:hover{
+transform: translate(30px, 30px);
+}
+
+.image2:hover{
+transform: scale(2);
+}
+
+@keyframes translate {
+    0% {transform:translate(30px,30px);}
+    25% {transform:translate(60px,60px);}
+    50% {transform:translate(90px,90px);}
+    100% {transform:translate(120px,120px);}
+}
+
+@keyframes rotation {
+    0% {transform:rotate(45deg);}
+    25% {transform:rotate(90deg);}
+    50% {transform:rotate(135deg);}
+    100% {transform:rotate(180deg);}
+}
+
+.image3_animation:hover
+{
+    animation-name:rotation;
+    animation-duration:4s;
+}
